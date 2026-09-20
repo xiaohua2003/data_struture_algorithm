@@ -29,7 +29,8 @@ class Solution:
                 res.append([start, end])
         return res
      
-
+# running time: o(nlogn)
+# space complexity: o(n)
             
 
 
