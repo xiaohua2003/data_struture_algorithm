@@ -18,6 +18,23 @@ class Solution:
         return -1
 
             
+# appraoch two
+class Solution:
+    def pivotIndex(self, nums: list[int]) -> int:
+        n = len(nums)
+        total = sum(nums)
+        left_sum = 0
+        for i, num in enumerate(nums):
+            right_sum = total - left_sum - num
+            if right_sum == left_sum:
+                return i
+            left_sum += num
+        return -1
 
+
+            
+
+
+        
 
         
